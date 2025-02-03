@@ -15,13 +15,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR">
+    <html lang="pt-BR" suppressHydrationWarning>
       <body
-
-        className={`bg-zinc-900 text-white flex flex-col min-h-screen ${inter.className} antialiased`}
+        className={`bg-zinc-900 text-white flex flex-col min-h-screen antialiased ${inter.className}`}
       >
         <Navbar />
-        <div className="flex-1">{children}</div>
+        <div className="flex flex-1 flex-col container">{children}</div>
         <Footer />
       </body>
     </html>
