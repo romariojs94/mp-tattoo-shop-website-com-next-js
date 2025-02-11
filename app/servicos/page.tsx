@@ -19,9 +19,9 @@ export default function Servicos() {
     },
   ]
   return (
-    <main>
+    <main className="py-8 max-md:px-4">
       <h1 className="font-black text-3xl text-yellow-300 mt-12">Servicos</h1>
-      <section className="flex gap-12 mt-16">
+      <section className="flex max-lg:flex-col gap-12 mt-8 md:mt-16">
         {services.map((service, index) => (
           <article key={index}>
             <h2 className="font-black text-white text-lg mb-4">{service.title}</h2>

@@ -4,7 +4,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import Link from "next/link";
 export default function Contato() {
   return (
-    <main className="flex justify-between gap-10">
+    <main className="flex max-sm:flex-col justify-between gap-10 max-md:px-4">
       <section>
         <h1 className="font-black text-3xl mt-12 mb-10">Entre em <span className="text-yellow-400">Contato</span></h1>
         <p className="mt-10 font-light text-zinc-400">Clique no botão abaixo e envie uma mensagem.<br />
@@ -20,7 +20,7 @@ export default function Contato() {
         </Link>
 
       </section>
-      <Image width="600" src={ImagemContato} alt="Imagem de contato" />
+      <Image width="600" src={ImagemContato} alt="Imagem de contato" className="max-md:w-full" />
     </main>
   );
 }

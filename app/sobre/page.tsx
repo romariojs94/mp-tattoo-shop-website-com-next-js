@@ -3,11 +3,11 @@ import Portrait from "@/app/_assets/portrait.png";
 import { islandMoments } from "../_lib/fonts";
 export default function Contato() {
   return (
-    <main className="relative flex-1">
+    <main className="relative flex-1 max-sm:px-4 max-md:flex-col">
       <h1 className="font-black text-3xl mt-12 mb-10">
         Prazer, sou <span className="text-yellow-300">Sandro Luz</span>
       </h1>
-      <section className="max-w-xl space-y-6 text-zinc-400 font-light">
+      <section className="max-w-xl max-md:w-full space-y-6 text-zinc-400 font-light">
         <p>
           Olá! Sou Sandro Luz, apaixonado pela arte que transcende o tempo e se
           imprime na pele. Com mais de 10 anos de experiência no mundo da
@@ -40,7 +40,7 @@ export default function Contato() {
       </section>
       <p className={`${islandMoments.className} text-6xl mt-6 mb-3`}>Sandro Luz</p>
       <Image
-        className="absolute right-0 -bottom-20 w-96"
+        className="xl:absolute right-0 -bottom-20 w-96"
         src={Portrait}
         alt="Retrado de Sandro Luz"
       />
